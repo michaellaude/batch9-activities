@@ -1,0 +1,103 @@
+body {
+    background-color:white;
+}
+img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px
+}
+#survey-form {
+    background-color: #00619D;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 25px;
+    border: 3px solid rgb(160, 160, 160);
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+input[type=text] {
+    padding: 8px 12px;
+    position:relative;
+    border-radius: 25px;
+    min-width: 100%;
+    min-block-size: 6%;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+input[type=email] {
+    padding: 8px 12px;
+    position:relative;
+    border-radius: 25px;
+    min-width: 100%;
+    min-block-size: 6%;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+input[type=tel] {
+    padding: 8px 12px;
+    border-radius: 25px;
+    min-width: 50%;
+    min-block-size: 6%;
+    margin-top: 10px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+input[type=number] {
+    padding: 8px 12px;
+    border-radius: 25px;
+    min-width: 85%;
+    min-block-size: 1%;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+.select {
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.pew {
+    width: 45%;
+    float: left;
+}
+.pewpew {
+    display: flex;
+}
+input[type=submit] {
+    font-size:15px; 
+    padding-block: 8px;
+    padding-inline: 30px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid white;
+    color: #00619D;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+#link{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 17.5px
+}
+#textbox {
+    border: red;
+}

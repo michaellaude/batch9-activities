@@ -1,0 +1,129 @@
+<html>
+    <head>
+    <title>The World of Chess (GRID)</title>
+
+    <style>
+        body {
+            background-color: rgb(36, 34, 34);
+        }
+        .chessboard {
+            border-radius: 25px;
+            border: 20px solid saddlebrown;
+            width: 80vmin;
+            height: 80vmin;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 0;
+            grid-template-columns: repeat(8, 10vmin);
+            grid-template-rows: repeat(8, 10vmin);
+            grid-auto-flow: row;
+        }
+        .blackbox {
+            background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
+            font-size: 7.5vmin;
+            justify-content: center;
+            text-align: center;
+        }
+        .whitebox {
+            background-color: beige;
+            font-size: 7.5vmin;
+            justify-content: center;
+            text-align: center;
+        }
+        .chessboard:hover .white1 {
+            animation: move1 1s linear forwards 1;
+        }
+        @keyframes move1 {
+            0% {
+                transform:translateX(0)
+            }
+            100% {
+                transform:translateY(-220%);
+            }
+        }
+
+    </style>
+
+    </head>
+
+    <body>
+
+        <div class="chessboard">
+
+                <div class="whitebox">♜</div>
+                <div class="blackbox">♞</div>
+                <div class="whitebox">♝</div>
+                <div class="blackbox">♛</div>
+                <div class="whitebox">♚</div>
+                <div class="blackbox">♝</div>
+                <div class="whitebox">♞</div>
+                <div class="blackbox">♜</div>
+    
+
+                <div class="blackbox">♟</div>
+                <div class="whitebox">♟</div>
+                <div class="blackbox">♟</div>
+                <div class="whitebox">♟</div>
+                <div class="blackbox">♟</div>
+                <div class="whitebox">♟</div>
+                <div class="blackbox">♟</div>
+                <div class="whitebox">♟</div>
+         
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+           
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>        
+           
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+           
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>
+                <div class="blackbox"></div>
+                <div class="whitebox"></div>        
+            
+                <div class="whitebox">♙</div>
+                <div class="blackbox">♙</div>
+                <div class="whitebox">♙</div>
+                <div class="blackbox">♙</div>
+                <div class="whitebox"><div class="white1">♙</div></div>
+                <div class="blackbox">♙</div>
+                <div class="whitebox">♙</div>
+                <div class="blackbox">♙</div>
+           
+                <div class="blackbox">♖</div>
+                <div class="whitebox">♘</div>
+                <div class="blackbox">♗</div>
+                <div class="whitebox">♕</div>
+                <div class="blackbox">♔</div>
+                <div class="whitebox">♗</div>
+                <div class="blackbox">♘</div>
+                <div class="whitebox">♖</div>     
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Avoion School Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img src="timson.png" alt="logo">
+        <div id="survey-form">
+            <div class='survey'>
+        <div id="title">
+            <h1>Registration Form</h1>
+            <p id="description">Create an account to trade</p>
+            <form>
+                <!--NAME-->
+                <div>
+                    <label for=" " id="name-label">Full Name</label></br>
+                    <input type="text" name="name" id ="name" placeholder="Jose Rizal" required>
+                </div></br>
+
+                <!--EMAIL-->
+                <div>
+                    <label for=" " id= "email-label">Email</label></br>
+                    <input type="email" name="name" id ="email" placeholder="email@gmail.com" required>
+                </div></br>
+
+                <!--NUMBER-->
+                <div>
+                    <label for="phone" id="number-label">Phone Number</label></br>
+                    <input type="tel" name="name" id="phone" placeholder="0917..." pattern="^(09|\+639)\d{9}" required>
+                </div></br>
+
+                <div class="pewpew">
+                <div class="pew">
+                    <label for=" " id="number-label">Age</label></br>
+                    <input type="number" name ="name" id="number" placeholder="only 18 and above" min="18" max="120" required>
+                </div></br>
+                <!--DROPDOWN-->
+                
+                <div class="pew">
+                    <label for=" " id="dropdown">Gender</label><br>
+                    <select class="select" name="Gender" id="gender">
+                        <option disabled selected>Select..</option>
+                        <option value="male">Male</option> 
+                        <option value="female">Female</option>
+                        <option value="other">Prefer not to say</option>
+                    </select>
+                </div>
+                </div>
+
+                <!--NAMEATTRIBUTE-->
+                <p>What type of account would you like to make?</p>
+                <input type="radio" name="acctype" id="margin"
+                    value="margin">
+                <label for="margin">Margin</label>
+                <input type="radio" name="acctype" id="spot"
+                    value="spot">
+                <label for="spot">Spot</label>
+                </div>
+
+                <!--CHECKBOXES-->
+                <p>What are your current investments?</p>
+                <input type="checkbox" name="investments" id="stocks"
+                    value="stocks">
+                <label for="stocks">Stocks</label></br>
+                <input type="checkbox" name="investments" id="realestate"
+                    value="realestate">
+                <label for="realestate">Real Estate</label></br>
+                <input type="checkbox" name="investments" id="bonds"
+                    value="bonds">
+                <label for="bonds">Bonds</label></br>
+                <input type="checkbox" name="investments" id="options"
+                    value="options">
+                <label for="options">Options</label></br>
+                <input type="checkbox" name="investments" id="cryptocurrency"
+                    value="cryptocurrency">
+                <label for="cryptocurrency">Cryptocurrency</label></br>
+                <input type="checkbox" name="investments" id="investmentfund"
+                    value="investmentfund">
+                <label for="investmentfund">Investment Fund</label></br>
+                <input type="checkbox" name="investments" id="retirement"
+                    value="retirement">
+                <label for="retirement">Retirement</label></br>
+
+                <!--TEXTAREA-->
+                <p>Anything we should know before you proceed?</p>
+                <label for="feedback">Notes: </label>
+                <textarea name="feedback" id="feedback">
+                </textarea></br></br></br>
+
+                <!--SUBMIT-->
+                <input type="submit" name="button" value="Submit"></br></br>
+            </form>
+        </div>
+        </div>
+        </div>
+        <div id="link">
+        <a class="link" href="https://timson.com.ph/">Back to Homepage</a>
+        </div>
+        </body>
+</html>

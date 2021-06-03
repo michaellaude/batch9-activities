@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Momentum App</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+        <script src="https://kit.fontawesome.com/c30bca7430.js" crossorigin="anonymous"></script>
+    </head> 
+
+
+
+    <body>
+
+    <div id="top">
+<!--CLOCK-->
+        <div class="col1">
+        <div class="clock">
+            <span class="clock-time"></span>
+            <span class="clock-ampm"></span>
+        </div>
+        </div>
+<!--GREETING-->
+        <div class="col1">
+        <div class="greeting-container">
+                <span class="greeting">Good Day, </span>
+                <input type="text" placeholder="Name" id="greetingname">
+        </div>
+        </div>
+    </div>
+
+
+
+
+</br></br></br>
+
+
+
+<div id="center">
+<!--FOCUS-->
+    <div class="col2">
+        <div class="mainfocus"> 
+            <p class=focus>What is your</br> main focus for the day?</p>
+            <input type="text" class="themainfocus">
+        </div>
+    </div>
+<!--TODO-->
+    <div class="col2">
+            <div id="toDo-container">
+                <div id="ToDo">Click for To Do List</div>
+                <span class="popup-menu-container">
+                    <div id="toDo-title">Today:</div>
+                    <div class="list-container"></div>
+                    <input type="text" id="toDo-input" placeholder="New Todo">
+                </span>
+            </div>
+    </div>  
+</div>
+    
+
+
+
+    
+</br></br></br>
+
+
+    <div id="bottom">
+<!--QUOTE-->
+        <section class="quote-container" id="quote-container">
+            <!-- Quotes here-->
+            <div class="quote-text">
+                <span id="quote">Generate your quote pressing the button bellow!</span>
+                <span id="author">Author's name</span>
+            </div>
+            <div class="button-container">
+                <button id="new-quote">Generate quote</button>
+                <div id="form-container">
+                    <form onsubmit="return false" autocomplete="off">
+                        <div id="new-quotes-container">
+                          <label for="author"><b>Author:</b></label>
+                          <input type="text" placeholder="Add new author here" name="addauthor" id="addauthor" required>
+                      
+                          <label for="quote"><b>Quote:</b></label>
+                          <input type="text" placeholder="Add new quote here" name="addquote" id="addquote" required>
+                          
+                          <button type="submit" id="add-quotes-button">Register new quote</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>  
+    </div>
+
+
+
+
+    </body>
+
+
+
+
+
+</html>

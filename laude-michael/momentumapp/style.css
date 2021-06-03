@@ -1,0 +1,303 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-image: url(BG.png);
+    background-size: cover;
+
+}
+
+
+#top {
+    display: flex;
+}
+.col1 {
+    width: 100%;
+}
+
+/*CLOCK*/
+.clock { 
+    padding: 10px;  
+    margin-left: 100px;
+}
+.clock-time, 
+.clock-ampm {
+    font-family: sans-serif;
+    font-size: 5vw;
+    color: white;
+}
+.clock-time {
+    font-size: 10vw;
+}
+
+
+
+
+/*NAMEEEEEEEE*/
+.greeting-container {
+    border: none;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.greeting {
+    color: white;
+    font-weight: bold;
+    font-size: 40px
+}
+#greetingname {
+    border: none;
+    background: none;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    height: 100px;
+}
+
+textarea {
+    background:none; 
+    border: 1px solid black;
+    padding: 1%;
+}
+
+
+
+
+
+#center {
+    display: flex;
+    align-items: center;
+}
+.col2 {
+    width: 100%;
+    justify-content: center;
+    padding-top: 80px;
+}
+.focus {
+    color: white; 
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.themainfocus {
+    background: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 3px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    font-size: 40px;
+    margin-top: 40px;
+    height: 75px;
+    color: white;  
+}
+
+
+
+/*TO Do*/
+#toDo-container {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        #ToDo {
+            margin-right: 1vw;
+            cursor: pointer;
+            color: black;
+            font-size: 20px;
+            font-weight: 999;
+            text-align: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 5px;
+            padding: 25px;
+        }
+
+            /* The actual popup */
+            .popup-menu-container {
+                visibility: hidden;
+                display: block;
+                height: auto;
+                max-height: 90vh;
+                width: 300px;
+                background-color: rgba(250, 250, 250, 1);
+                color: black;
+                border-radius: 6px;
+                padding: 0 10px 0 10px;
+                z-index: 1;
+                position: absolute;
+                
+            }
+
+                #toDo-title {
+                    font-size: 1.1rem;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    padding-top: 5px;
+                    padding-bottom: 8px;
+                }
+
+                .toDo-checkbox {
+                    margin: 0 2px 0 2px;
+                }
+                
+                .list-container div + div {
+                    padding-top: 3px;
+                    padding-bottom: 2px;
+                }
+
+                .item-wrapper {
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                }
+
+                    .item-title {
+                        height: auto;
+                        width: 87%;
+                        background: 0;
+                        border: 0;
+                        outline-style: none;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                    }
+
+                    .checked {
+                        text-decoration: line-through;
+                    }
+
+                    .item-title:focus-visible {
+                        border-bottom: 1px solid #000;
+                    }
+                    
+                    .item-wrapper:hover .item-remove-icon {
+                        display: initial;
+                    }
+
+                    .item-remove-icon {
+                        
+                        height: 16px;
+                        width: 16px;
+                        vertical-align: middle;
+                        transform: rotate(45deg);
+                        cursor: pointer;
+                        background-image: url(trash.jpg)
+
+                    }
+
+                #toDo-input {
+                    display: block;
+                    width: 100%;
+                    height: 30px;
+                    background: 0;
+                    border: 0;
+                    border-bottom: 2px solid #fff;
+                    outline-style: none;
+                    font-size: 1rem;
+                }
+
+            /* Popup arrow */
+            .popup-menu-container::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 90%;
+                margin-left: -8px;
+                border-width: 8px;
+                border-style: solid;
+                border-color: rgba(250, 250, 250, 1) transparent transparent transparent;
+            }
+
+            /* Toggle this ID - hide and show the popup */
+            .show {
+                visibility: visible;
+                -webkit-animation: fadeIn 1s;
+                animation: fadeIn 1s;
+            }
+
+            .hide {
+                visibility: hidden;
+                height: 0;
+                -webkit-animation: fadeIn 1s;
+                animation: fadeIn 1s;
+            }
+
+            .none {
+                display: none;
+            }
+
+
+/*QUOTTEEEEE*/
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    margin-top: 55px;
+    padding: 20px 30px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top:90px;
+}
+.quote-text {
+    font-size: 1.75rem;
+    color: white;
+}
+#author {
+  font-style: italic;
+  font-weight: 300;  
+}
+.button-container {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid rgb(170, 169, 169);
+    text-align: center;
+    height: 32px; 
+    outline: none;
+}
+b {
+    font-size: 15px;
+    margin: 0 10px;
+    color: white;
+    font-weight: 300;
+}
+#add-quotes-button {
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
+}
+#new-quote {
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
+}
+button:hover {
+    background-color: rgb(180, 216, 180);
+}
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+
+
+
